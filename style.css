@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0c9555;
+}
+.container{
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+} 
+
+h1,h2,h3{
+    font-weight: 100;
+    font-size: 2.6em;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 10px;
+}
+#min, #sec, #tens{
+    font-size: 2em;
+    margin-right: 8px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 1em;
+}
+.timeP{
+    margin-bottom: 10px;
+}
+.btn:hover{
+    background: white;
+    color: #0c9555;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+p{position: relative;}
+#divider{
+    position: absolute;
+    font-size: 1.8em;
+    transform: translateX(-10px);
+}
+
+.updown-anima{
+    animation-name: infiniteupdown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: 1s ease;
+}
+
+@keyframes infiniteupdown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
