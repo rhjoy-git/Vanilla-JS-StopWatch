@@ -30,7 +30,6 @@ h1,h2,h3{
     color: white;
     border: 2px solid white;
     border-radius: 5px;
-    margin-right: 10px;
     outline: none;
     font-size: 1em;
 }
@@ -58,7 +57,7 @@ p{position: relative;}
     transition: 1s ease;
     max-width: 100%;
 }
-
+/* Animation */
 @keyframes infiniteupdown {
     0% {
         transform: translateY(0px);
@@ -69,4 +68,9 @@ p{position: relative;}
     100% {
         transform: translateY(0px);
     }
+}
+
+/* Responsive */
+@media only screen and (max-width: 360px){
+    
 }
