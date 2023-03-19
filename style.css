@@ -81,6 +81,7 @@ p{position: relative;}
 }
 
 /* Responsive */
+                /* 1400px */
 @media only screen and (max-width: 1400px){
     h1,h2,h3{
         font-size: 3.2em;
@@ -96,16 +97,48 @@ p{position: relative;}
         margin: 10px 15px;
     }
     .updown-anima{
+        max-width: 100%;
         width: 500px;
     }
 }
+            /* 1200px */
+@media only screen and (max-width: 1200px){
+    h1,h2,h3{
+        font-size: 2.6em;
+    }
+    .timeP{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .btn {
+        width: 100px;
+        height: 40px;
+        font-size: 1em;
+        margin: 5px 10px;
+    }
+    .updown-anima{
+        width: auto;
+    }
+}
+            /* 1024 */
+@media only screen and (max-width: 996px){
+    h1,h2,h3{
+        font-size: 2.2em;
+    }
+    .btn {
+        width: 90px;
+        height: 35px;
+        font-size: 1em;
+    }
+}
+
 @media only screen and (max-width: 360px){
     h1,h2,h3{
         font-size: 2em;
         font-weight: 400;
     }
-
 }
+
 @media only screen and (max-width: 320px){
     h1,h2,h3{
         font-size: 1.7em;
