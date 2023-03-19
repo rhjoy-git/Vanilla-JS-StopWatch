@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +14,8 @@ body{
 } 
 
 h1,h2,h3{
-    font-weight: 100;
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 400;
     font-size: 2.6em;
     text-transform: capitalize;
     color: white;
@@ -72,5 +74,31 @@ p{position: relative;}
 
 /* Responsive */
 @media only screen and (max-width: 360px){
-    
+    h1,h2,h3{
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+}
+@media only screen and (max-width: 320px){
+    h1,h2,h3{
+        font-size: 1.7em;
+        font-weight: 400;
+    }
+    .btn {
+        width: 75px;
+        height: 35px;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+    #btn-reset{
+        display: block;
+        margin: 20px auto;
+    }
+    #btn-start{
+        margin-right: 5px;
+    }
+    #btn-stop{
+        margin-left: 5px;
+    }
 }
