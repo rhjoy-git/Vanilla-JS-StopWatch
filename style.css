@@ -25,6 +25,11 @@ h1,h2,h3{
     font-size: 2em;
     margin-right: 8px;
 }
+.all-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
 .btn{
     width: 100px;
     height: 40px;
@@ -34,9 +39,12 @@ h1,h2,h3{
     border-radius: 5px;
     outline: none;
     font-size: 1em;
+    margin: 0 5px;
+
 }
 .timeP{
     margin-bottom: 10px;
+    font-size: 18px;
 }
 .btn:hover{
     background: white;
@@ -73,22 +81,38 @@ p{position: relative;}
 }
 
 /* Responsive */
+@media only screen and (max-width: 1400px){
+    h1,h2,h3{
+        font-size: 3.2em;
+    }
+    .timeP{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .btn {
+        width: 120px;
+        height: 48px;
+        font-size: 1.3em;
+        margin: 10px 15px;
+    }
+    .updown-anima{
+        width: 500px;
+    }
+}
 @media only screen and (max-width: 360px){
     h1,h2,h3{
-        font-size: 1.9em;
+        font-size: 2em;
         font-weight: 400;
     }
-    .all-button{
-        margin-top: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
+
 }
 @media only screen and (max-width: 320px){
     h1,h2,h3{
         font-size: 1.7em;
         font-weight: 400;
+    }
+    .all-button{
+        display: block;
     }
     .btn {
         width: 75px;
